@@ -21,7 +21,7 @@
             href="/css/style.css"
         >
     </head>
-
+<script src="./Javascript/Validation.js" defer></script>
     <body>
         <section>
             <article class="header">
@@ -45,30 +45,34 @@
                     <input
                         type="text"
                         placeholder="First Name"
+                        name="name"
                         required
                     > 
-                     <br> 
-                    
-
+                    <p><img src="./image/icon-error.svg" alt="">&nbsp;&nbsp;First name must be letters only</p>
                     <input
                         type="text"
                         placeholder="Last Name"
+                        name="name"
                         required
-                    > <br>
+                    > 
+                    <p><img src="./image/icon-error.svg" alt="">&nbsp;&nbsp;Last name must be letters only  </p>
 
                     <input
                         type="email"
                         placeholder="Email Address"
+                        name="email"
                         required
-                    ><br>
+                    >
+                    <p><img src="./image/icon-error.svg" alt="">&nbsp;&nbsp;Email must be a valid address e.g me@mydomain.com</p>
 
 
                     <input
                         type="password"
                         placeholder="Password"
+                        name="password"
                         required
-                    ><br>
-
+                    >
+                    <p><img src="./image/icon-error.svg" alt="">&nbsp;&nbsp;Password must alphanumeric (@, _ and - are also allowed) and be 8 - 20 characters </p>
                     <button>
                         <p>CLAIM YOUR FREE TRIAL
                         </p>

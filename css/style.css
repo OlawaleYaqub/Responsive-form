@@ -61,7 +61,7 @@ input:placeholder-shown {
 }
 
 button {
-    margin-top: 2rem;
+    margin-top: 3rem;
     margin-left: 2rem;
     width: 87%;
     outline: 0;
@@ -134,4 +134,23 @@ p.subscribe span {
     button {
         width: 83%;
     }
+}
+
+/* Form Validation */
+input + p {
+    color: red;
+    font: inherit;
+    text-align: center;
+    height: 0;
+    opacity: 0;
+}
+input.valid{
+    border-color: rgb(111, 241, 111);
+}
+input.invalid{
+    border-color: red;
+}
+input.invalid + p{
+    opacity: 1;
+    height: auto;
 }
